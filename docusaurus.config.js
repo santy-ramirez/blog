@@ -9,7 +9,7 @@ const config = {
   title: 'santy',
   tagline: 'Dinosaurs are cool',
   url: 'https://github.com',
-  baseUrl: '/',
+  baseUrl: '/blog',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.logo.png',
