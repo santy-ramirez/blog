@@ -28,10 +28,12 @@ const config = {
           editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
+          routeBasePath:'/',
           showReadingTime: true,
+          blogSidebarCount: 'ALL'
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          //editUrl:
+            //'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -43,11 +45,16 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+     /*algolia: {
+        contextualSearch: true,
+        appId:'YOU_APP_ID',
+      },**/
       navbar: {
        
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.png',
+
         },
         items: [
           
@@ -66,25 +73,25 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'blog',
+                to: '/blog/',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'mis redes sociales',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'medium',
+                href: 'https://google.com',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'linkedin',
+                href: 'https://linkedin.com/in/santiago-ramirez',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/santhy_Ramirez',
               },
             ],
           },
@@ -97,12 +104,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/santy-ramirez',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} My BLOG, Inc. santiago Ramirez.`,
       },
       prism: {
         theme: lightCodeTheme,
