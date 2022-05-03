@@ -6,19 +6,19 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #005fbf;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #7384bc;
+  --ifm-color-primary-dark: #5f72b2;
+  --ifm-color-primary-darker: #5469ad;
+  --ifm-color-primary-darkest: #45568f;
+  --ifm-color-primary-light: #8796c6;
+  --ifm-color-primary-lighter: #929fcb;
+  --ifm-color-primary-lightest: #b0bad9;
   --ifm-code-font-size: 95%;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #005fbf;
+  --ifm-color-primary: #7384bc;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
   --ifm-color-primary-darkest: #1a8870;
@@ -37,3 +37,20 @@
 [data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
 }
+
+@media screen and (max-width: 996px){
+  article header h2{
+font-size: 2rem !important;
+  }
+  article header h1{
+font-size: 2rem !important;
+  }
+}
+
+@media screen and (min-width: 996px){
+  .navbar__inner{
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+
